@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <title> Formulario </title>
+    </head>
+
+    <body>
+        <header>
+            <div class="contenedor">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="backend.html">Backend</a></li>
+                        <li><a href="frontend.html">FrontEnd</a></li>
+                        <li><a href="mision.html">Mision</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="#">Formulario</a></li>
+                    </ul>   
+                </nav>
+                <img src="../imagenes/logo.png" alt="logo">
+                <div class="contenedortexto">
+                    <div class="texto">
+                        <h1 class="titulo">Formulario</h1>
+                    </div>
+                </div>
+            </div>   
+        </header>
+
+        <section>
+            <div class="contenedor">
+                <h2 class="tema">Formulario necesario</h2>
+
+                <form class="formulario">
+                    <h3 class="subtema">Información Personal</h3>
+                    <input type="text" placeholder="Nombre" name="nombre" size="40" required></p>
+                    <p>Año de Nacimiento: <input type="date" required></p>
+                    <p>Sexo:
+                        <input type="radio" name="hm" value="h"> Hombre
+                        <input type="radio" name="hm" value="m"> Mujer
+                    </p>
+                    <h3 class="subtema">Información de Contacto</h3>
+                    <p><input type="email" placeholder="Correo electrónico" name="correo" required></p>
+                    <p>Telefono: <input type="tel" placeholder="99xxxxxxx" name="Telefono" pattern="[0-9]{9}" required></p>
+                    <p>
+                        <input id="subir" class="boton" type="submit" value="Enviar">
+                        <input id="borrar" class="boton" type="reset" value="Borrar">
+                    </p>
+                </form>
+            </div>
+        </section>
+
+        <aside>
+            <div class="tabla">
+                <table>
+                    <caption><h2>Ejemplo de formularios de usuarios en la base de datos</h2></caption>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <th>Información Personal</th>
+                            <th>Información de Contacto</th>
+                        </tr>
+                        <tr>
+                            <th>Usuario #1</th>
+                            <td> 
+                                <ul>
+                                    <li>Nombre: Jesus Alfredo Mera Segovia</li>
+                                    <li>Edad: xx/xx/xxxx</li>
+                                    <li>Sexo: Hombre</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Correo: usuario@utpl.edu.ec</li>
+                                    <li>Telefono: 099xxxxxx</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Usuario #2</th>
+                            <td> 
+                                <ul>
+                                    <li>Nombre: Jesus Alfredo Mera Segovia</li>
+                                    <li>Edad: xx/xx/xxxx</li>
+                                    <li>Sexo: Hombre</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Correo: usuario@utpl.edu.ec</li>
+                                    <li>Telefono: 099xxxxxx</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>   
+        </aside>
+    </body>
+</html>
